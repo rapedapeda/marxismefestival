@@ -1,0 +1,90 @@
+.modal-full {
+    min-width: 100%;
+    margin: 0;
+}
+
+.modal-full .modal-content {
+    min-height: 100vh;
+}
+
+/* Buttons */
+.btn-primary{
+    background-color: white;
+    border-color: rgba(0,0,0,0);
+    color: rgba(0,0,0,.5);
+}
+.btn-primary:hover,
+.btn-primary:active{
+    background-color: white;
+    border-color: white;
+    color:rgba(0,0,0,.7)
+}
+
+/*-------- Navigation ----------*/
+
+.navbar-collapse h2{
+    margin-top:1rem;
+}
+
+/* Tab navbar */
+nav.tabs{
+    background-color:white;
+    margin-bottom:0;
+}
+.nav-tabs{
+    border-bottom: 0;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+    border: 0;
+    background-color: unset;
+}
+.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover{
+    border:0;
+}
+.nav-tabs .nav-link{
+    border:0;
+}
+/* Links */
+a, .link{
+    color:rgba(0,0,0,.5)
+}
+a:hover, a:focus, .link:hover, .link:focus{
+    color: rgba(0,0,0,.7);
+    text-decoration: none;
+}
+
+/* Links in ul lists */
+ul.links{
+    padding-left:0;
+    list-style-type: none;
+}
+.menu--account ul{
+    justify-content: center;
+}
+.nav-link{
+    font-size:1.3rem;
+}
+#block-sportfotovriend-useraccountmenu .nav-link{
+    width:100%;
+}
+.nav-link .is-active{
+    color: rgba(0,0,0,.9);
+}
+
+/*------------ Full-width background in container -*/
+.full-width-section {
+    width: 100vw;
+    position: relative;
+    left: 50%;  
+    margin-left: -50vw;
+ }
+
+
+ /* ---------- Footer ---------*/
+
+ .site-footer .block{
+     margin:0;
+     border:none;
+     border-color:rgba(255,255,255,0.1);
+     padding:10px;
+}

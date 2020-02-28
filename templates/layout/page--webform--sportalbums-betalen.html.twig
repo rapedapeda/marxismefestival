@@ -1,0 +1,18 @@
+{% extends  "page.html.twig" %}
+ 
+{# Replace content_fields #}
+{% block main_wrapper %}
+    <div id="main-wrapper" class="layout-main-wrapper clearfix background overlay">
+{% endblock %}
+
+{% block content %}
+        <div id="main" class="container h-min-100 d-flex justify-content-center">
+          {{ page.breadcrumb }}
+          <div class="content text-center align-self-center">
+              <main{{ content_attributes }}>
+                  <a id="main-content" tabindex="-1"></a>
+                        {{ page.content }}
+              </main>
+          </div>
+        </div>
+{% endblock %}

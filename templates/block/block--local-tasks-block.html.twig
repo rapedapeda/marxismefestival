@@ -1,0 +1,15 @@
+{# extends @bootstrap_barrio/layout/block.html.twig
+/**
+ * @file
+ * Theme override for tabs.
+ */
+#}
+{% block content %}
+  {% if content %}
+    <nav class="tabs fixed-bottom" role="navigation" aria-label="{{ 'Tabs'|t }}">
+    <div class="row justify-content-center">
+      {{ content }}
+    </div>
+    </nav>
+  {% endif %}
+{% endblock %}

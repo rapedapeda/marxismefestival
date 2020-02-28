@@ -1,0 +1,61 @@
+{#
+/**
+ * @file
+ * Default theme implementation for status messages.
+ *
+ * Displays status, error, and warning messages, grouped by type.
+ *
+ * An invisible heading identifies the messages for assistive technology.
+ * Sighted users see a colored box. See http://www.w3.org/TR/WCAG-TECHS/H69.html
+ * for info.
+ *
+ * Add an ARIA label to the contentinfo area so that assistive technology
+ * user agents will better describe this landmark.
+ *
+ * Available variables:
+ * - message_list: List of messages to be displayed, grouped by type.
+ * - status_headings: List of all status types.
+ * - display: (optional) May have a value of 'status' or 'error' when only
+ *   displaying messages of that specific type.
+ * - attributes: HTML attributes for the element, including:
+ *   - class: HTML classes.
+ *
+ * @see template_preprocess_status_messages()
+ *
+ * @ingroup themeable
+ */
+#}
+{% for type, messages in message_list %}
+  {%
+    set classes = [
+      'show',
+      'fade',
+      'toast',
+      'animated fadeOut delay-3s',
+    ]
+  %}
+
+<div class="toast-list">
+  {% for message in messages %} 
+    <div {{ attributes|without('role', 'aria-label').addClass(classes) }} role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-header">
+        {% if status_headings[type] %}
+          <strong class="mr-auto">{{ status_headings[type] }}</strong>
+          <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+            <span aria-hidden="true"><i class="la la-close"></i></span>
+          </button>
+        {% else %}
+          <strong class="mr-auto">{{ 'Notification'|t }}</strong>
+          <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+            <span aria-hidden="true"><i class="la la-close"></i></span>
+          </button>
+        {% endif %}
+        </button>
+      </div>
+      <div class="toast-body">
+        {{ message }}
+      </div>
+    </div>
+  {% endfor %}
+</div>
+{% endfor %}

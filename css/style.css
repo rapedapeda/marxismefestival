@@ -1,0 +1,661 @@
+/* Fonts */
+
+@font-face {
+    font-family:"Harry";
+    src: url('../fonts/Harry-Regular.ttf') /* TTF file for CSS3 browsers */
+  }
+
+/**
+ * @file
+ * Subtheme specific CSS.
+ */
+
+
+ body{
+    padding-top: 56px;
+    font-size: 1.1rem;
+}
+#main{
+    margin-top: 0;
+}
+#main-wrapper {
+    padding-top: 0;
+    min-height: calc(100vh - 56px);
+}
+.w-min-100{
+    min-width: 100%;
+}
+.height-100, .h-min-100{
+    min-height: calc(100vh - 56px);
+}
+.h-min-100-bottombar{
+    min-height: calc(100vh - 56px - 64px);
+}
+.h-min-30{
+    min-height: 30vh;
+}
+.h-min-30-child{
+    min-height: calc(30vh - 56px);
+}
+.h-min-40{
+    min-height: 40vh;
+}
+.h-min-50{
+    min-height: 50vh;
+}
+.h-min-70{
+    min-height: 70vh;
+}
+
+/*--------- backgrounds */
+#block-betalenstart,
+.gradienta{
+    background: #1f4037!important; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #1f4037, #99f2c8)!important; /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #1f4037, #99f2c8)!important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: white;
+}
+.gradientb{
+    background: #1f4037!important; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #1f4037, #99f2c8)!important; /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #1f4037, #99f2c8)!important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: white;
+    border-top: solid white 2px;
+}
+
+.palette-a{
+    background-color: #FEED00;
+    color: #212f3d;
+}
+.palette-b{
+    background-color: #41AAEC;
+    color:white;
+}
+.palette-c{
+    background-color: #E52321;
+    color:white;
+}
+.palette-d{
+    background-color: #212f3d;
+    color:white;
+}
+.textcolor-a{
+    color: #FEED00;
+}
+.textcolor-b{
+    color: #41AAEC;
+}
+.textcolor-c{
+    color: #E52321;
+}
+.textcolor-d{
+    color: #212f3d;
+}
+
+.odd .aligned-background{
+    background-position-x: right!important;
+}
+.even .aligned-background{
+    background-position-x: left!important;
+}
+
+/*---------- Images */
+img.image-style-logo{
+    margin-top: 0!important;
+    margin-bottom: 0.5rem !important;
+}
+
+
+/* Autocomplete fields */
+.ui-widget{
+    font-size: 1.2rem;
+    padding: 0.5rem;
+}
+li.ui-menu-item,
+li.ui-menu-item:hover,
+li.ui-menu-item:visited,
+li.ui-menu-item:active{
+    width: 100%!important;
+    background-color:unset!important;
+    height:25px!important;
+}
+.ui-menu-item a,
+.ui-menu-item a:hover,
+.ui-menu-item a:visited,
+.ui-menu-item a:active,
+.ui-menu-item a:focus{
+    background-color: unset!important;
+    color: #404040!important;
+    border: 0px!important;
+    text-decoration: none!important;
+    padding: 5px 15px!important;
+}
+
+/* Texts */
+p.smallcaps,
+span.uppercase{
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+
+
+h1, h2, h3, h4, h5, h6, h1 a, h2 a, h3 a,
+.fieldset-legend{
+    font-weight:300 !important;
+}
+h2, h3, h4, h5, h6,
+.fieldset-legend{
+    font-family:'Harry';
+}
+h1{
+    font-family:'Harry';
+    font-size: 3rem;
+}
+h1.banner-title{
+    font-family:'Harry';
+    font-size:4.5rem;
+}
+h1.subtitle{
+    font-family:'Harry';
+    font-size: 2.5rem;
+    margin-bottom:1rem;
+}
+h1.banner-subtitle{
+    font-family:'Harry';
+    font-size: 2.5rem;
+}
+h1.subtitle span{
+    font-family:'Harry';
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin-right: 5px;
+}
+
+h3,
+.fieldset-legend{
+    font-size: 1.75rem;
+    text-transform: uppercase;
+}
+
+h3.xsmall{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+h4{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+h4.subtitle{
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.gradient-betalen h1{
+    color: white
+}
+
+
+a,
+a:hover,
+a:visited{
+    color: ;
+    text-decoration: none;
+}
+
+/* Footer */
+footer.site-footer,
+div.site-footer__bottom{
+    padding: 0;
+  /*  background: white; */
+}
+
+.site-footer .content{
+    color:white;
+    text-align: center;
+}
+.site-footer__bottom{
+    margin: 0px;
+}
+.site-footer__bottom .block{
+    text-align: center;
+    width: 100%;
+}
+.site-footer__bottom .region,
+.site-footer__bottom .content{
+    margin: 0;
+    padding: 0;
+}
+
+/*-------- 1. Colors */
+.background-dark{
+    background-color: #2F4858;
+}
+.gradient-dark{
+    background: #2F4858!important; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2F4858, #006C7D)!important; /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2F4858, #006C7D)!important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: white;
+}
+
+/*-------- 2. Divs */
+@media only screen and (max-width: 768px) {
+    .hide-background-on-mobile{
+        background-image: none!important;
+    }
+}
+
+.circle img.image-style-thumbnail-square{
+    border-radius: 50%;
+    border: 4px solid #FEED00;
+    box-shadow: 0 0 0 2px #E52321;
+}
+
+.zoom {
+    transition: transform .5s; /* Animation */
+  }
+  
+  .zoom:hover {
+    transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+
+/* div.block:not(.h-min-100,.padding-reduced){ Lijkt de cart block te verneuken
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+} */
+div.padding-reduced{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+div.even .aligned-background div.row{
+    justify-content: end;
+}
+div.view-header{
+    padding-bottom: 1rem;
+}
+/*-------- 2.1 sloped bottom div */
+div.chevron-down{
+    -webkit-clip-path: polygon(100% 0, 100% 85%, 50% 100%, 0 85%, 0 50%, 0% 0%);
+    clip-path: polygon(100% 0, 100% 85%, 50% 100%, 0 85%, 0 50%, 0% 0%);
+}
+div.chevron-up{
+    -webkit-clip-path: polygon(50% 15%, 100% 0, 100% 100%, 0 100%, 0 0);
+    clip-path: polygon(50% 15%, 100% 0, 100% 100%, 0 100%, 0 0);
+}
+
+.position-bottom{ /* Make the next div go doooownnnn */
+    margin-bottom: auto;
+}
+
+.flex-direction-column{
+    flex-direction: column;
+}
+
+
+/*-------- 3. Forms */
+/* #edit-actions{ vernaggelde add to card-buttons
+    margin-top:2rem;
+} */
+#edit-actions a,
+#edit-login-returning-customer-forgot-password{ /* this is the wachtwoordvergetenlink */
+    width:100%;
+    float: left;
+    font-size: 0.8rem;
+    color: #212f3d;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-top:1rem;
+}
+.form-submit{
+    width: auto;
+}
+label{
+    float:left;
+    margin-bottom:0px;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+.checkbox label{
+    float: unset!important;
+}
+.form-group{
+    margin-bottom: 0.2rem;
+}
+.form-text{
+    margin-top: 0px;
+}
+.form-email,
+form#user-login-form fieldset,
+.webform-submission-contact-form #edit-naam{
+    width: 100%;
+    max-width: 400px;
+    display: inline-block;
+}
+.description.text-muted{
+    color:#212f3d!important;
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: rgb(211,211,211)!important;
+}
+::-moz-placeholder { /* Firefox 19+ */
+    color: rgb(211,211,211)!important;
+}
+:-ms-input-placeholder { /* IE 10+ */
+    color: rgb(211,211,211)!important;
+}
+:-moz-placeholder { /* Firefox 18- */
+    color: rgb(211,211,211)!important;
+}
+
+/*------------ 3.0 Form Checkout - login */
+#edit-login-returning-customer label{
+    width: 100%;
+}
+#edit-login-returning-customer input{
+    width: 100%;
+    max-width: 400px;
+    display: inline-block;
+}
+#edit-login-returning-customer input#edit-login-returning-customer-submit{
+    margin-top:1.5rem;
+    width:auto!important;
+}
+
+/*------------ 3.1 Form checkout - address */
+.form-item-contact-information-email{
+    text-align:left;
+}
+.form-item-contact-information-email label{
+    width:100%;
+}
+
+.layout-region-checkout-footer{
+    margin-top: 10px;
+}
+
+/*--- this will remove padding l en r on mobile */
+#edit-payment-information-billing-information * {
+    padding-left: 0;
+    padding-right: 0;
+}
+#edit-payment-information-billing-information input{
+    padding-left: .75rem;
+    padding-right: .75rem;
+}
+fieldset.checkout-pane{
+    margin-bottom: 1rem;
+}
+#edit-payment-information-billing-information-address-0-address{
+    text-align:left;
+}
+.form-item-payment-information-billing-information-address-0-address-address-line1,.form-item-payment-information-billing-information-address-0-address-address-line2 {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.form-item-payment-information-billing-information-address-0-address-postal-code{
+    width:33%;
+    display:inline-block;
+}
+.form-item-payment-information-billing-information-address-0-address-locality{
+    width:66%;
+    display:inline-block;
+    float: right;
+}
+.form-item-payment-information-billing-information-address-0-address-given-name{
+    width:49%;
+    display:inline-block;
+}
+.form-item-payment-information-billing-information-address-0-address-family-name{
+    width: 50%;
+    display:inline-block;
+    float:right;
+}
+.form-item-payment-information-billing-information-address-0-address-address-line2{
+    display:none;
+}
+/*------------ 3.2 Form checkout - review (is uitgeschakeld in de flow atm)*/
+.checkout-pane-review fieldset a{
+    text-transform: uppercase;
+    vertical-align: middle;
+    font-size:1rem;
+}
+table{
+    font-size:1rem;
+}
+table tr th{
+    font-weight: 300;
+    background: unset;
+    color: #212f3d;
+}
+.table thead th{
+    border-bottom: 1px;
+    padding-bottom:0;
+}
+.table th{
+    text-transform: uppercase;
+    font-size:0.9rem;
+    border-top: 0;
+}
+tr{
+    border:none;
+    background-color:unset;
+}
+tr th,
+tr td{
+    border:none;
+}
+.order-total-line__subtotal,
+.order-total-line__adjustment{
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+.order-total-line__total{
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+.view-commerce-checkout-order-summary div.view-footer{
+    margin-right:-15px;
+}
+
+/*------------ 3.3 Form checkout - voltooid */
+.checkout-complete__payment-instructions{
+    margin-top:2rem;
+}
+.checkout-complete__payment-instructions h2{
+    font-size: 2rem;
+}
+
+/*------------ 3.4 User login form */
+#user-login-form small{
+    color: white!important;
+}
+#edit-login-guest{
+    width: 100%!important;
+}
+
+/*---------------- 4 Webform */
+.webform-button--previous{
+    display: none;
+}
+.webform-button--next,
+.webform-button--submit{
+    width: auto;
+}
+.webform-number{
+    width: 100%;
+    max-width: 150px;
+    display: inline-block;
+}
+.intl-tel-input{
+    width: 100%;
+    max-width: 275px;
+}
+.webform-time{
+    max-width: 7em;
+}
+/*--------------- 4.1 Webform contact */
+.webform-submission-contact-form input{
+    display:inline-block;
+}
+/*-------------- 5 Media */
+.img-circle img{
+    border-radius: 50%;
+}
+
+/* -------------- 5 Navigation ------- */
+footer .nav-link{
+    font-size: 0.857em;
+    padding: 0 1rem;
+}
+
+
+/* ------------- 6 List styles -------- */
+ul.pros li{
+    list-style-type: none;
+}
+ul.pros li::before{
+    color: #77be32;   
+    content: "\f17b"; 
+    font-family: LineAwesome;
+    padding-right: .5rem;
+}
+
+
+/* ------------- 7 Toast ------------- */
+.toast-list{
+    position: absolute;
+    top: 56px;
+    right: 0px;
+    padding: 10px 10px;
+    z-index:99;
+}
+.toast{
+    max-width: 350px;
+    overflow: hidden;
+    font-size: .875rem;
+    background-color: rgba(255,255,255,.2);
+    background-clip: padding-box;
+    border: 1px solid rgba(255,255,255,.5);
+    border-radius: .25rem;
+    box-shadow: 0 .25rem .75rem rgba(0,0,0,.1);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    animation-duration: 3s;
+    animation-delay: 2s;
+    padding: .75rem;
+    margin-bottom:5px;
+  }
+}
+.toast-header{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    color: white;
+    background-color: rgba(255,255,255,.85);
+    background-clip: padding-box;
+    border-bottom: 1px solid rgba(0,0,0,.05);
+}
+.toast-body{
+}
+
+/* Tickets of Marxismefestival*/
+
+.ticket{
+    border: 0px solid;
+    padding: 10px;
+    border-radius: .25rem;
+    background-image: url(/sites/default/files/2019-04/people-red-sideways_0.png);  
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: right;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+}
+
+/*------- Add to cart on homepage --------*/
+.ticket .field--widget-commerce-product-variation-attributes{
+    width:250px;
+    max-width: 100%;
+    padding-left:0px;
+}
+
+.ticket .field--widget-commerce-product-variation-attributes .attribute-widgets{
+    padding-left:0px;
+}
+
+.ticket .field--name-quantity{
+    width:150px;
+    padding-left:0px;
+}
+.ticket .form-actions{
+    padding-top:15px;
+}
+
+/*------- Cart block on homepage -------*/
+.cart-block--contents{
+    width:auto;
+    background: #f8f9fa;
+}
+
+div.cart-block--summary{
+    border: 1px solid rgba(0,0,0,.1);
+    padding: 0 .75rem;
+    border-radius: .25rem;
+    line-height: 40px;
+    height:40px;
+    margin-right: 15px;
+}
+div.cart-block--summary .la{
+    vertical-align: top;
+}
+
+
+/*                     */
+/* Bookstore */
+.view-book-store{
+    font-size: 0.9rem;
+}
+.view-book-store .commerce-order-item-add-to-cart-form,
+.view-book-store .field--widget-commerce-product-variation-attributes,
+.view-book-store .attribute-widgets,
+.view-book-store .attribute-widgets fieldset,
+.view-book-store #edit-actions{
+    padding: 0;
+}
+.view-book-store #edit-actions{
+    margin: 6px 5px;
+}
+.view-book-store .attribute-widgets .form-type-select,
+.view-book-store .field--widget-commerce-product-variation-attributes{
+    max-width:175px;
+}
+
+.view-book-store .commerce-order-item-add-to-cart-form{
+    display: flex;
+    justify-content: start;
+    align-items: end;
+}
+.column-direction{
+    flex-direction: column
+}
+
+/* 8 Views */
+
+.node--view-mode-teaser{
+    border: 0;
+}
+.accordion a:not(.collapsed) h3{
+    border-bottom: 1px solid #E52321
+}
+.accordion a h3{
+    border-bottom: none;
+}
+
+.btn-warning{
+    background-color: #41AAEC!important;
+    color: #FEED00;
+}

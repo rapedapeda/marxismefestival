@@ -1,0 +1,40 @@
+{#
+/**
+ * @file
+ *
+ * Default product template.
+ *
+ * Available variables:
+ * - attributes: HTML attributes for the wrapper.
+ * - product: The rendered product fields.
+ *   Use 'product' to print them all, or print a subset such as
+ *   'product.title'. Use the following code to exclude the
+ *   printing of a given field:
+ *   @code
+ *   {{ product|without('title') }}
+ *   @endcode
+ * - product_entity: The product entity.
+ * - product_url: The product URL.
+ *
+ * @ingroup themeable
+ */
+#}
+<article{{ attributes }}>
+  <div class="row">
+    <div class="col col-auto">
+      {{- product.field_afbeelding -}}
+    </div>
+    <div class="col d-flex justify-content-between column-direction">
+      <div class"col">
+        <span class="uppercase">{{- product.field_auteur_s_.0 -}}</span>
+        <h3>{{- product.title -}}</h3>
+        {{- product.body -}}
+        <h4>{{- product.variation_price -}}</h4>
+      </div>
+      <div class="d-flex justify-content-start">
+          {{- product.variations -}}
+      </div>
+    </div>
+
+  </div>
+</article>

@@ -1,0 +1,22 @@
+<div class="accordion container" id="{{ id }}">
+  <div class="accordion-button-row row">
+  {% for key, row in rows -%} 
+    <div class="col-lg-4 col-md-6 col-sm-12  mb-3">
+      <div id="heading{{ key }}">
+        <a data-toggle="collapse" data-target="#{{ id }}-collapse-{{ key }}" aria-expanded="true" aria-controls="{{ id }}-collapse-{{ key }}" class="collapsed">
+        <h3 class="mb-0">         
+            {{ row.title }}
+          </h3>
+        </a>
+      </div>
+    </div>
+  {%- endfor %}
+  </div>
+  <div class="accorion-content-row row mb-5 mt-3">
+  {% for key, row in rows -%}
+      <div id="{{ id }}-collapse-{{ key }}" class="collapse w-100" aria-labelledby="heading{{ key }}" data-parent="#{{ id }}">
+          {{row.content}}
+      </div>
+  {%- endfor %}
+  </div>
+</div>
