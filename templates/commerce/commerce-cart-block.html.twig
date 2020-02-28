@@ -1,10 +1,7 @@
 <div{{ attributes}}>
   <div class="cart-block--summary">
     <a class="cart-block--link__expand" href="{{ url }}">
-      <span class="cart-block--summary__icon"><i class="la la-2x la-shopping-cart"></i></span>
-      {# <span class="cart-block--summary__icon">{{ icon }}</span> #}
-
-      <span class="cart-block--summary__count">{{ count_text }}</span>
+    <i class="la las la-2x la-shopping-cart" data-count="{{ count }}"></i>
     </a>
   </div>
   {% if content %}

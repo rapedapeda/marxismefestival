@@ -99,11 +99,6 @@
     background-position-x: left!important;
 }
 
-/*---------- Images */
-img.image-style-logo{
-    margin-top: 0!important;
-    margin-bottom: 0.5rem !important;
-}
 
 
 /* Autocomplete fields */
@@ -129,6 +124,14 @@ li.ui-menu-item:active{
     border: 0px!important;
     text-decoration: none!important;
     padding: 5px 15px!important;
+}
+
+
+
+/*---------- Images */
+img.image-style-logo{
+    margin-top: 0!important;
+    margin-bottom: 0.5rem !important;
 }
 
 /* Texts */
@@ -200,6 +203,25 @@ a:hover,
 a:visited{
     color: ;
     text-decoration: none;
+}
+
+/* Header */
+.las[data-count]{
+    position:relative;
+}
+.las[data-count]:after{
+    position: absolute;
+    right: -1.25em;
+    top: 0;
+    content: attr(data-count);
+    padding: .3em;
+    color: #3b3b3b;
+    line-height: .9em;
+    text-align: center;
+    min-width: 1.6em;
+    font-size: .4em;
+    font-weight: 600;
+    font-family: Arial;
 }
 
 /* Footer */
