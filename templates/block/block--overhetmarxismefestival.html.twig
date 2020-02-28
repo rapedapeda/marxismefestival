@@ -35,10 +35,10 @@
     'block',
     'block-' ~ configuration.provider|clean_class,
     'block-' ~ plugin_id|clean_class,
-    'h-min-70 d-flex justify-content-center',
+    'col col-md-6 justify-content-center',
   ]
 %}
-<div class="palette-a full-width-section">
+<div class="row">
   <div{{ attributes.addClass(classes) }}>
     {{ title_prefix }}
     {% if label %}
@@ -46,10 +46,7 @@
     {% endif %}
     {{ title_suffix }}
     {% block content %}
-
-      <div{{ content_attributes.addClass('content text-leftt align-self-center justify-content-center') }} >
-        {{ content.body }}
-      </div>
+      {{ content.body }}
     {% endblock %}
   </div>
 </div>
