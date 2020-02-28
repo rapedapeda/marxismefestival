@@ -91,6 +91,55 @@ a:active,
     color: #fffeff;
 }
 
+/* Backgrounds */
+/*--------- backgrounds */
+#block-betalenstart,
+.gradienta{
+    background: #1f4037!important; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #1f4037, #99f2c8)!important; /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #1f4037, #99f2c8)!important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: white;
+}
+.gradientb{
+    background: #1f4037!important; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #1f4037, #99f2c8)!important; /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #1f4037, #99f2c8)!important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: white;
+    border-top: solid white 2px;
+}
+
+.palette-a{
+    background-color: #FEED00;
+    color: #212f3d;
+}
+.palette-b{
+    background-color: #41AAEC;
+    color:white;
+}
+.palette-c{
+    background-color: #E52321;
+    color:white;
+}
+.palette-d{
+    background-color: #212f3d;
+    color:white;
+}
+
+/* Texts */
+.textcolor-a{
+    color: #FEED00;
+}
+.textcolor-b{
+    color: #41AAEC;
+}
+.textcolor-c{
+    color: #E52321;
+}
+.textcolor-d{
+    color: #212f3d;
+}
+
+
 
 /* ---------- Color Form ----------- */
 
