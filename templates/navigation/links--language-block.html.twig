@@ -35,20 +35,11 @@
 {% if links -%}
   {{ attach_library('bootstrap_barrio/links') }}
 
-  {%- if heading -%}
-    {%- if heading.level -%}
-      <{{ heading.level }}{{ heading.attributes }}>{{ heading.text }}</{{ heading.level }}>
-    {%- else -%}
-      <h2{{ heading.attributes }}>{{ heading.text }}</h2>
-    {%- endif -%}
-  {%- endif -%}
   <ul{{ attributes }}>
     {%- for key, item in links -%}
       <li{{ item.attributes.addClass('nav-item',key|clean_class) }}>
         {%- if item.link -%}
-          <div class="nav-link">
             {{ item.link }}
-          </div>
         {%- elseif item.text_attributes -%}
           <span{{ item.text_attributes }}>{{ item.text }}</span>
         {%- else -%}
