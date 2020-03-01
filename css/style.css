@@ -51,7 +51,7 @@
 }
 
 
-section.section > div:first-child{
+section.section > div{
     margin-top: 56px;
 }
 
