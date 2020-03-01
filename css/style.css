@@ -12,10 +12,26 @@
 
 
  body{
-    padding-top: 56px;
+    padding-top: 0; /* was 56px */
     font-size: 1.1rem;
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
 }
+
+.blurred{
+    position: fixed;
+    top:0;
+    width: 100%;
+    min-height: 50px;
+    margin-bottom: 20px;
+    background: rgba(0,0,0,.4);
+    z-index:1010;
+    -webkit-filter: blur(20px);
+    -moz-filter: blur(20px);
+    -o-filter: blur(20px);
+    -ms-filter: blur(20px);
+    filter: blur(20px);
+}
+
 #main{
     margin-top: 0;
 }
@@ -628,6 +644,10 @@ div.cart-block--summary .la{
 }
 
 /* 8 Views */
+
+.views-element-container{
+    margin-bottom: 4rem;
+}
 
 .node--view-mode-teaser{
     border: 0;
