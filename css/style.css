@@ -50,6 +50,10 @@
     min-height: 70vh;
 }
 
+div.block{
+    margin-top: 56px;
+}
+
 /* Backgrounds */
 .odd .aligned-background{
     background-position-x: right!important;
