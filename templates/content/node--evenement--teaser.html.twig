@@ -77,14 +77,14 @@
   <div>
     {{ title_prefix }}
     {% if not page %}
-      <h2{{ title_attributes.addClass('textcolor-a node__title') }}>
+      <h3{{ title_attributes.addClass('node__title') }}>
         {{ label }}
-      </h2>
+      </h3>
     {% endif %}
     {{ title_suffix }}
   </div>
   <div class="position-bottom">
-    <h4 class="subtitle textcolor-c">{{ content.field_spreker }}</h4>
+    <h4 class="subtitle">{{ content.field_spreker }}</h4>
   </div>
   <div class="">
     <h4 class="textcolor-a subtitle">{{ content.field_tijdstip.0 }} 
