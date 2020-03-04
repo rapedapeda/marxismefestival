@@ -61,6 +61,10 @@
 #}
 {{ attach_library('bootstrap_barrio/node') }}
 
+{% set image_url = file_url(content.field_foto[0]['#media'].field_media_image.entity.uri.value) %}
+      {% set image_alt = content.field_foto[0]['#media'].field_media_image.alt %}
+
+
 {%
   set classes = [
     'node',
@@ -75,6 +79,16 @@
 %}
 <article{{ attributes.addClass(classes) }}>
   <div>
+    <div class="h-100 w-100" style="
+      background-image:url('{{ image_url }}');
+      background-repeat:no-repeat;
+      background-position-y:center;
+      background-position-x:center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+  "></div>
     {{ title_prefix }}
     {% if not page %}
       <h3{{ title_attributes.addClass('node__title') }}>
