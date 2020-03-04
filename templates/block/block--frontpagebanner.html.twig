@@ -43,11 +43,11 @@
 %}
 <div class="palette-a full-width-section">
   <div{{ attributes.addClass(classes) }} style="
-    linear-gradient(
+    background: linear-gradient(
       rgba(0, 0, 0, 0.45), 
       rgba(0, 0, 0, 0.45)
-    );
-    background-image: url({{ image_url }}); background-repeat: no-repeat;
+    ), url({{ image_url }}); 
+    background-repeat: no-repeat;
     background-position-y: top;
     background-position-x: center;
     background-size:cover;"
