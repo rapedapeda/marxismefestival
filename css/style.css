@@ -166,13 +166,13 @@ p{
 a,
 a:hover,
 a:visited{
-    color: #E52321;
-    text-decoration: none;
+    color: #E52321 !important;
+    text-decoration: none  !important;
 }
 
 a:hover{
-    color: #c0201f;
-    text-decoration: none;
+    color: #c0201f!important;
+    text-decoration: none!important;
 }
 /* Header */
 .las[data-count]{
