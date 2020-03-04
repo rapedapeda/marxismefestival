@@ -61,6 +61,9 @@
 #}
 {{ attach_library('bootstrap_barrio/node') }}
 
+{% set image_url = file_url(content.field_foto[0]['#media'].field_media_image.entity.uri.value) %}
+      {% set image_alt = content.field_foto[0]['#media'].field_media_image.alt %}
+
 {%
   set classes = [
     'node',
