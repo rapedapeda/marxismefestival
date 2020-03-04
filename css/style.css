@@ -225,6 +225,7 @@ div.site-footer__bottom{
 
 
 /*--------- 11. Content */
+#block-views-block-sprekers-homepage .node--view-mode-teaser,
 #block-views-block-evenementen-homepage .node--view-mode-teaser{
     border-radius: 0px;
     border: 1px solid white;
