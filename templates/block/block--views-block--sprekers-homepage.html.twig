@@ -34,15 +34,18 @@
     'block',
     'block-' ~ configuration.provider|clean_class,
     'block-' ~ plugin_id|clean_class,
+    'pb-5 pt-5',
+    'palette-b full-width-section',
+    '',
     'animated fadeIn delay-2s',
   ]
 %}
 
 <div{{ attributes.addClass(classes) }}>
-  <div class="h-min-30-child">
+  <div class="container h-min-30-child">
     {{ title_prefix }}
     {% if label %}
-        <h3 class="xsmall textcolor-c">{{ label }}</h2>
+        <h2 class="xsmall text-center">{{ label }}</h2>
     {% endif %}
     {{ title_suffix }}
     {% block content %}
