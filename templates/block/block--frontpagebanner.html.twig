@@ -42,10 +42,16 @@
   ]
 %}
 <div class="palette-a full-width-section">
-  <div{{ attributes.addClass(classes) }} style="background-image: url({{ image_url }}); background-repeat: no-repeat;
-background-position-y: top;
-background-position-x: center;
-background-size:cover;">
+  <div{{ attributes.addClass(classes) }} style="
+    linear-gradient(
+      rgba(0, 0, 0, 0.45), 
+      rgba(0, 0, 0, 0.45)
+    ),
+    background-image: url({{ image_url }}); background-repeat: no-repeat;
+    background-position-y: top;
+    background-position-x: center;
+    background-size:cover;"
+  >
     {{ title_prefix }}
     {% if label %}
       <h2{{ title_attributes }}>{{ label }}</h2>
