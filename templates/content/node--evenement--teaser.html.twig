@@ -75,8 +75,18 @@
   ]
 %}
 <article{{ attributes.addClass(classes) }}>
-  <div class="card-content">
-    <div>
+  <div>
+    <div class="card-image" style="
+      background-image:url('{{ image_url }}');
+      background-repeat:no-repeat;
+      background-position-y:center;
+      background-position-x:center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    "></div>
+    <div class="card-content">
       {{ title_prefix }}
       {% if not page %}
         <h3{{ title_attributes.addClass('node__title') }}>
@@ -87,6 +97,7 @@
     </div>
     <div class="position-bottom">
       <h4 class="subtitle">{{ content.field_spreker }}</h4>
+      {{ content.body }}
     </div>
     <div class="">
       <h4 class="textcolor-c subtitle">{{ content.field_tijdstip.0 }} 
