@@ -54,8 +54,8 @@ background-size:cover;">
     {% block content %}
 
       <div{{ content_attributes.addClass('content text-center align-self-center justify-content-center') }} >
-        <h1 class="banner-title textcolor-b animated fadeIn">{{ content.field_title }}</h1>
-        <h1 class="subtitle textcolor-c animated fadeIn delay-1s">{{ content.field_ondertitel }}</h1>
+        <h1 class="banner-title textcolor-white animated fadeIn">{{ content.field_title }}</h1>
+        <h1 class="subtitle textcolor-white animated fadeIn delay-1s">{{ content.field_ondertitel }}</h1>
         {{ content.body }}
       </div>
     {% endblock %}
