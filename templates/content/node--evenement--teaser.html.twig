@@ -78,34 +78,31 @@
   ]
 %}
 <article{{ attributes.addClass(classes) }}>
-  <div class="h-100">
-    <div class="card-image" style="
-      background-image:url('{{ image_url }}');
-      background-repeat:no-repeat;
-      background-position-y:center;
-      background-position-x:center;
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover;
-    "></div>
-    <div class="card-content">
-      {{ title_prefix }}
-      {% if not page %}
-        <h3{{ title_attributes.addClass('node__title') }}>
-          {{ label }}
-        </h3>
+  <div class="card-image" style="
+    background-image:url('{{ image_url }}');
+    background-repeat:no-repeat;
+    background-position-y:center;
+    background-position-x:center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  "></div>
+  <div class="card-content">
+    {{ title_prefix }}
+    {% if not page %}
+      <h3{{ title_attributes.addClass('node__title') }}>
+        {{ label }}
+      </h3>
+    {% endif %}
+    {{ title_suffix }}
+    <h4 class="subtitle">{{ content.field_spreker }}</h4>
+    {{ content.body }}
+    <div class="position-bottom">
+      <h4 class="textcolor-c subtitle">{{ content.field_tijdstip.0 }} 
+      {% if content.field_lokatie['#items'].getValue() %}
+        {{ 'at'|t }} {{ content.field_lokatie }}</h4>
       {% endif %}
-      {{ title_suffix }}
-      <h4 class="subtitle">{{ content.field_spreker }}</h4>
-      {{ content.body }}
-      <div class="position-bottom">
-        <h4 class="textcolor-c subtitle">{{ content.field_tijdstip.0 }} 
-        {% if content.field_lokatie['#items'].getValue() %}
-          {{ 'at'|t }} {{ content.field_lokatie }}</h4>
-        {% endif %}
-      </div>
     </div>
-
   </div>
 </article>

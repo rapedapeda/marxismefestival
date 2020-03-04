@@ -235,6 +235,8 @@ div.site-footer__bottom{
 .card-content{
     height: 100%;
     padding: 10px;
+    display: flex;
+    flex-direction: column;
 }
 .card-image{
     min-height: 150px;
