@@ -277,18 +277,10 @@ div.even .aligned-background div.row{
 div.view-header{
     padding-bottom: 1rem;
 }
-/*-------- 2.1 sloped bottom div */
-div.chevron-down{
-    -webkit-clip-path: polygon(100% 0, 100% 85%, 50% 100%, 0 85%, 0 50%, 0% 0%);
-    clip-path: polygon(100% 0, 100% 85%, 50% 100%, 0 85%, 0 50%, 0% 0%);
-}
-div.chevron-up{
-    -webkit-clip-path: polygon(50% 15%, 100% 0, 100% 100%, 0 100%, 0 0);
-    clip-path: polygon(50% 15%, 100% 0, 100% 100%, 0 100%, 0 0);
-}
 
-.position-bottom{ /* Make the next div go doooownnnn */
-    margin-bottom: auto;
+
+.position-bottom{ 
+    margin-top: auto;
 }
 
 .flex-direction-column{
