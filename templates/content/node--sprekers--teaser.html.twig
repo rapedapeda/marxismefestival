@@ -75,11 +75,12 @@
     view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
     'clearfix',
     'flex-direction-column d-flex h-100',
+    'card-custom',
   ]
 %}
 <article{{ attributes.addClass(classes) }}>
   <div>
-    <div class="h-100 w-100" style="
+    <div class="card-image" style="
       background-image:url('{{ image_url }}');
       background-repeat:no-repeat;
       background-position-y:center;
@@ -88,15 +89,17 @@
       -moz-background-size: cover;
       -o-background-size: cover;
       background-size: cover;
-  "></div>
-    {{ title_prefix }}
-    {% if not page %}
-      <h3{{ title_attributes.addClass('node__title') }}>
-        {{ label }}
-      </h3>
-    {% endif %}
-    {{ title_suffix }}
-    {{ content.body }}
+    "></div>
+    <div class="card-content">
+      {{ title_prefix }}
+      {% if not page %}
+        <h3{{ title_attributes.addClass('node__title') }}>
+          {{ label }}
+        </h3>
+      {% endif %}
+      {{ title_suffix }}
+      {{ content.body }}
+    </div>
   </div>
   <div class="position-bottom">
     <h4 class="subtitle"></h4>

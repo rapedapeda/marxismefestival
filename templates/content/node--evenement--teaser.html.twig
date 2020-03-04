@@ -71,25 +71,28 @@
     view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
     'clearfix',
     'flex-direction-column d-flex h-100',
+    'card-custom',
   ]
 %}
 <article{{ attributes.addClass(classes) }}>
-  <div>
-    {{ title_prefix }}
-    {% if not page %}
-      <h3{{ title_attributes.addClass('node__title') }}>
-        {{ label }}
-      </h3>
-    {% endif %}
-    {{ title_suffix }}
-  </div>
-  <div class="position-bottom">
-    <h4 class="subtitle">{{ content.field_spreker }}</h4>
-  </div>
-  <div class="">
-    <h4 class="textcolor-a subtitle">{{ content.field_tijdstip.0 }} 
-    {% if content.field_lokatie['#items'].getValue() %}
-      {{ 'at'|t }} {{ content.field_lokatie }}</h4>
-    {% endif %}
+  <div class="card-content">
+    <div>
+      {{ title_prefix }}
+      {% if not page %}
+        <h3{{ title_attributes.addClass('node__title') }}>
+          {{ label }}
+        </h3>
+      {% endif %}
+      {{ title_suffix }}
+    </div>
+    <div class="position-bottom">
+      <h4 class="subtitle">{{ content.field_spreker }}</h4>
+    </div>
+    <div class="">
+      <h4 class="textcolor-a subtitle">{{ content.field_tijdstip.0 }} 
+      {% if content.field_lokatie['#items'].getValue() %}
+        {{ 'at'|t }} {{ content.field_lokatie }}</h4>
+      {% endif %}
+    </div>
   </div>
 </article>
