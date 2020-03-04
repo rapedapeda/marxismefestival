@@ -225,7 +225,7 @@ div.site-footer__bottom{
 
 
 /*--------- 11. Content */
-div.custom-card{
+div.card-custom{
     border-radius: 0px;
     border: 1px solid white;
     background-color: white;
@@ -234,6 +234,9 @@ div.custom-card{
 
 .card-content{
     padding: 10px;
+}
+.card-image{
+    min-height: 150px;
 }
 
 /*-------- 2. Divs */
