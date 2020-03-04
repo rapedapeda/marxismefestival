@@ -225,7 +225,7 @@ div.site-footer__bottom{
 
 
 /*--------- 11. Content */
-div.card-custom{
+.card-custom{
     border-radius: 0px;
     border: 1px solid white;
     background-color: white;
