@@ -218,6 +218,11 @@ div.site-footer__bottom{
     padding: 0;
 }
 
+/* Social icons 2020 */
+.social-icons .la{
+    font-size: 5rem;
+}
+
 /*-------- 1. Colors */
 .background-dark{
     background-color: #2F4858;
