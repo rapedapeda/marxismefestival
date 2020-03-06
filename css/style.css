@@ -641,6 +641,12 @@ input[type="radio"] {
     display: inline-block;
     margin-top: 4px;
 }
+input[type="checkbox"]:checked, 
+input[type="radio"]:checked {
+    border: 1px solid #242a20;
+    color:#242a20;
+    background-color:#242a20;
+}
 .form-check-input{
     margin-left: 0;
 }
