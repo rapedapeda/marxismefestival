@@ -9,26 +9,26 @@
 
 /* Buttons */
 .btn,
-.cart-block--contents__links a{
+.cart--cart-block .cart-block--contents a{
     border-radius: 0;
     text-transform: uppercase;
     padding: 0.75rem 2rem;
 }
 .btn-primary,
-.cart-block--contents__links a{
+.cart--cart-block .cart-block--contents a{
     background-color: #E52321;
     border-color: rgba(0,0,0,0);
     color: white;
 }
 .btn-primary:hover,
 .btn-primary:active,
-.cart-block--contents__links a:hover,
-.cart-block--contents__links a:active{
+.cart--cart-block .cart-block--contents a:hover,
+.cart--cart-block .cart-block--contents a:active{
     background-color: black;
     border-color: black;
     color: white
 }
-
+.cart--cart-block .cart-block--contents a
 
 
 /*-------- Navigation ----------*/
