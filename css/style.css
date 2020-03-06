@@ -601,6 +601,18 @@ div.cart-block--summary{
 div.cart-block--summary .la{
     vertical-align: top;
 }
+/* hide Verwijderen and show X on cart form */
+div.view-commerce-cart-form button.delete-order-item{
+    text-indent: -9999px;
+    line-height: 0; /* Collapse the original line */
+}
+div.view-commerce-cart-form button.delete-order-item:after{
+    content: "X";
+    text-indent: 0;
+    display: block;
+    line-height: 24px; /* New content takes up original line height */
+}
+
 
 
 /*                     */
