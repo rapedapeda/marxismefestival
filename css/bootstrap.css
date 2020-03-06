@@ -8,14 +8,17 @@
 }
 
 /* Buttons */
+.btn{
+    border-radius: 0;
+}
 .btn-primary{
-    background-color: white;
+    background-color: #E52321;
     border-color: rgba(0,0,0,0);
     color: rgba(0,0,0,.5);
 }
 .btn-primary:hover,
 .btn-primary:active{
-    background-color: white;
+    background-color: #c0201f;
     border-color: white;
     color:rgba(0,0,0,.7)
 }
