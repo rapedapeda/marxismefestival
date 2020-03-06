@@ -10,17 +10,18 @@
 /* Buttons */
 .btn{
     border-radius: 0;
+    text-transform: uppercase;
 }
 .btn-primary{
     background-color: #E52321;
     border-color: rgba(0,0,0,0);
-    color: rgba(0,0,0,.5);
+    color: white;
 }
 .btn-primary:hover,
 .btn-primary:active{
-    background-color: #c0201f;
-    border-color: white;
-    color:rgba(0,0,0,.7)
+    background-color: black;
+    border-color: black;
+    color: white
 }
 
 /*-------- Navigation ----------*/
