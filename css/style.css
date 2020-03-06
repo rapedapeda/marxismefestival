@@ -585,6 +585,12 @@ ul.pros li::before{
     margin: 0 -30px;
 }
 
+.ticket .attribute-widgets{
+    padding-top:2.5rem;
+    padding-left:0;
+    padding-right:0;
+}
+
 /*------- Cart block on homepage -------*/
 .cart-block--contents{
     width:auto;
