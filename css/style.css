@@ -641,6 +641,12 @@ input[type="radio"] {
     display: inline-block;
     margin-top: 4px;
 }
+.form-check-input{
+    margin-left: 0;
+}
+.checkbox label{
+    margin-left: 0.5rem;
+}
 /* 8 Views */
 
 .views-element-container{
