@@ -1,6 +1,6 @@
 <div{{ attributes}}>
   <div class="cart-block--summary">
-    <a class="cart-block--link__expand" href="{{ url }}">
+    <a class="cart-block--link__expand textcolor-d" href="{{ url }}">
     <i class="la las la-2x la-shopping-cart" data-count="{{ count }}"></i>
     </a>
   </div>
@@ -11,7 +11,7 @@
         {{ content }}
       </div>
       <div class="cart-block--contents__links text-center">
-        <a href="/cart">{{ 'Go to shopping cart'|t }}</a>
+        <button class="btn btn-primary" href="/cart">{{ 'Go to shopping cart'|t }}</a>
       </div>
     </div>
   </div>
