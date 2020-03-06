@@ -576,6 +576,13 @@ ul.pros li::before{
 
 }
 
+.ticket form legend {
+    display: none;
+}
+.ticket form fieldset{
+    margin: 0 -30px;
+}
+
 /*------- Cart block on homepage -------*/
 .cart-block--contents{
     width:auto;
