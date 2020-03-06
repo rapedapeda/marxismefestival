@@ -28,7 +28,9 @@
     border-color: black;
     color: white
 }
-.cart--cart-block .cart-block--contents a
+.cart--cart-block .cart-block--contents a{
+    color:white;
+}
 
 
 /*-------- Navigation ----------*/
