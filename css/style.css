@@ -9,7 +9,9 @@
  * @file
  * Subtheme specific CSS.
  */
-
+ .ajax-progress{
+    display:none!important;
+}
 
  body{
     padding-top: 0; /* was 56px */
