@@ -661,7 +661,7 @@ input[type="number"] {
     text-indent: -9999px;
     line-height: 0; /* Collapse the original line */
 }
-.view-commerce-cart-form #edit-actions #edit-submit:after{
+.view-commerce-cart-form #edit-actions #edit-submit:before{
     font-family: LineAwesome;
     content: "\f2f9"; 
     text-indent: 0;
