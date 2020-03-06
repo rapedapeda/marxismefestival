@@ -562,22 +562,6 @@ ul.pros li::before{
 .toast-body{
 }
 
-/* Tickets of Marxismefestival*/
-
-.ticket{
-    border: 0px solid;
-    padding: 10px;
-    border-radius: .25rem;
-    background-image: url(/sites/default/files/2019-04/people-red-sideways_0.png);  
-    background-repeat: no-repeat;
-    background-position-y: center;
-    background-position-x: right;
-    -webkit-background-size: contain;
-    -moz-background-size: contain;
-    -o-background-size: contain;
-    background-size: contain;
-}
-
 /*------- Add to cart on homepage --------*/
 
 .no-shadow{
