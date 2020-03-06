@@ -311,7 +311,7 @@ div.view-header{
     width: auto;
 }
 label{
-    float:left;
+    /*float:left;*/
     margin-bottom:0px;
     font-size: 0.9rem;
     text-transform: uppercase;
