@@ -22,7 +22,8 @@
 }
 .btn-primary:hover,
 .btn-primary:active,
-.cart-block--contents__links a{
+.cart-block--contents__links a:hover,
+.cart-block--contents__links a:active{
     background-color: black;
     border-color: black;
     color: white
