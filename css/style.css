@@ -582,6 +582,7 @@ ul.pros li::before{
 
 .no-shadow{
     box-shadow:none;
+    border: 1px solid #ffffff
 }
 .ticket .field--widget-commerce-product-variation-attributes{
     width:250px;
