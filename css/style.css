@@ -651,6 +651,11 @@ input[type="number"] {
     pointer-events:none;
     border-bottom: none;
   }
+  .views-field-edit-quantity .form-number {
+    max-width: 32px;
+    padding-left: 0;
+    padding-right: 0;
+}
 
 /*                     */
 /* Bookstore */
