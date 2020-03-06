@@ -661,6 +661,10 @@ input[type="number"] {
     display: none;
 }
 
+.form-actions{
+    margin-top: 2rem;
+}
+
 /*                     */
 /* Bookstore */
 .view-book-store{
