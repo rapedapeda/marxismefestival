@@ -613,7 +613,44 @@ div.view-commerce-cart-form button.delete-order-item:after{
     line-height: 24px; /* New content takes up original line height */
 }
 
+table > tbody > tr > td {
+    vertical-align: middle;
+}
 
+/*------- Quantity field with + and - */
+input[type="number"] {
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    appearance: textfield;
+  }
+  input[type=number]::-webkit-inner-spin-button,
+  input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+  }
+  .number-input {
+    display: inline-flex;
+  }
+  .number-input,
+  .number-input * {
+    box-sizing: border-box;
+  }
+  .number-input button {
+    outline:none;
+    -webkit-appearance: none;
+    background-color: transparent;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin: 0;
+    position: relative;
+    /*border-bottom: 2px solid #aaaaaa;*/
+  }
+  .number-input input[type=number] {
+    text-align: center;
+    pointer-events:none;
+    border-bottom: none;
+  }
 
 /*                     */
 /* Bookstore */

@@ -12,7 +12,6 @@
     border-radius: 0;
     text-transform: uppercase;
     padding: 0.75rem 2rem;
-    margin-top: 2rem;
 }
 .btn-primary{
     background-color: #E52321;
@@ -25,6 +24,8 @@
     border-color: black;
     color: white
 }
+
+
 
 /*-------- Navigation ----------*/
 
