@@ -649,13 +649,26 @@ input[type="number"] {
   .number-input input[type=number] {
     text-align: center;
     pointer-events:none;
-    border-bottom: none;
+    border: none;
   }
   .views-field-edit-quantity .form-number {
     max-width: 32px;
     padding-left: 0;
     padding-right: 0;
 }
+
+.view-commerce-cart-form #edit-actions #edit-submit{
+    text-indent: -9999px;
+    line-height: 0; /* Collapse the original line */
+}
+.view-commerce-cart-form #edit-actions #edit-submit:after{
+    content: "\f2f9"; 
+    font-family: LineAwesome;
+    text-indent: 0;
+    display: block;
+    line-height: 24px; /* New content takes up original line height */
+}
+
 
 /*                     */
 /* Bookstore */
