@@ -222,13 +222,6 @@ div.site-footer__bottom{
 .social-icons .la{
     font-size: 5rem;
 }
-.social-icons a{
-    color: black !important;
-}
-.social-icons a:hover,
-.social-icons a:active{
-    color: #E52321 !important;
-}
 /*-------- 1. Colors */
 .background-dark{
     background-color: #2F4858;
