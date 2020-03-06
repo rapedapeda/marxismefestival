@@ -630,6 +630,17 @@ div.cart-block--summary .la{
     flex-direction: column
 }
 
+/* Checkboxes */
+input[type="checkbox"], 
+input[type="radio"] {
+    -webkit-appearance: none;
+    background-color: none;
+    border: 1px solid #aaa;
+    padding: 5px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-top: 4px;
+}
 /* 8 Views */
 
 .views-element-container{
