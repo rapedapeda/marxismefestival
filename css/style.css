@@ -591,8 +591,8 @@ ul.pros li::before{
     background: #f8f9fa;
 }
 
-.ticket .card-content{
-    padding: 1.5rem;
+.ticket{
+    padding: 1.5rem 2.5rem;
 }
 
 div.cart-block--summary{
