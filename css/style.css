@@ -168,7 +168,7 @@ p{
 a,
 a:hover,
 a:visited{
-    color: #E52321 !important;
+    color: #E52321;
     text-decoration: none  !important;
 }
 
